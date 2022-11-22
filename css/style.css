@@ -54,20 +54,6 @@ section:nth-child(4) {
 }
 
 /* Home Page */
-/* .ml15 {
-    font-weight: 800;
-    font-size: 6em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.ml15 .word {
-    display: block;
-    line-height: 1em;
-}
-.ml15 .front{
-    font-size: 4rem;
-} */
 canvas {
     position: absolute;
     top: 0;
@@ -102,7 +88,6 @@ canvas {
         0.025em 0.05em 0 rgba(0, 0, 255, .75);
     animation: glitch 500ms infinite;
 }
-
 .glitch span {
     position: absolute;
     top: 0;
