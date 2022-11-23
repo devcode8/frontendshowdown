@@ -147,6 +147,8 @@ canvas {
     background-color: #fff;
     overflow: hidden;
     padding: 100px 0;
+    display: flex;
+    align-items: center;
 }
 .inner-section{
     position: absolute;
@@ -154,8 +156,19 @@ canvas {
     width: 55%;
     float: right;
     background-color: #000;
-    padding: 100px;
+    padding: 50px;
     box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    animation: abouttext 2s forwards ;
+}
+@keyframes abouttext {
+    0%,50%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .inner-section h1{
     color: #fff;
@@ -186,4 +199,8 @@ canvas {
     width: 280px;
     height: 100px;
     margin: 30px;
+}
+/*Winner*/
+.winner_container{
+    background: red;
 }
