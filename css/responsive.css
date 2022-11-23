@@ -1,7 +1,15 @@
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
-    /* Home Page */
-
+    /* About Us Page */
+    .about_us_container{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+        position: relative;
+        right: 0;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -26,6 +34,19 @@
     .glitch span {
         left: 22px;
     }
+    .bottom_text{
+        font-size: 1.5rem;
+    }
+    /*About Us*/
+    .about_us_container{
+        padding: 0;
+    }
+    .inner-section{
+        position: relative;
+        right: 0;
+        padding: 60px;
+    }
+    
 }
 /* Small devices (portrait tablets and large phones, 600px and down) */
 @media only screen and (max-width: 400px) {
@@ -42,4 +63,5 @@
     .glitch span {
         left: 19px;
     }
+    
 }

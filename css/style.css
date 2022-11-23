@@ -7,11 +7,10 @@
     color: #fff;
     text-align: center;
 }
-
 html,
 body {
     background-color: #fff;
-    height: 300vh;
+    height: 400vh;
 }
 
 section {
@@ -30,6 +29,9 @@ section:nth-child(3) {
 
 section:nth-child(4) {
     top: -300vh;
+}
+section:nth-child(5) {
+    top: -400vh;
     height: 100vh;
 }
 
@@ -48,12 +50,13 @@ section:nth-child(4) {
     background-color: black;
     padding: 1rem;
     overflow: hidden;
+}
+/* Home Page */
+.home_container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* Home Page */
 canvas {
     position: absolute;
     top: 0;
@@ -64,6 +67,14 @@ canvas {
     z-index: 2;
     line-height: 5.5rem;
     animation: title 200ms ease-in;
+}
+.bottom_text{
+    z-index: 1;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-weight: 700;
 }
 
 @keyframes title {
@@ -162,4 +173,51 @@ canvas {
             -0.025em -0.025em 0 rgba(0, 255, 0, .75),
             -0.025em -0.05em 0 rgba(0, 0, 255, .75);
     }
+}
+/* About us Section */
+.about_us_container{
+    background: url(/img/about.avif) no-repeat left;
+    background-size: 55%;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-section{
+    position: absolute;
+    right: 50px;
+    width: 55%;
+    float: right;
+    background-color: #000;
+    padding: 100px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+/*Rules Page*/
+#rules{
+    background: #e2e2e2;
+}
+.rules_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.rules_container .rule_card{
+    position: relative;
+    width: 280px;
+    height: 100px;
+    margin: 30px;
 }
