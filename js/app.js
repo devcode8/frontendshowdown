@@ -1,37 +1,3 @@
-let stickySection = [...document.querySelectorAll(".sticky")];
-
-function animate() {
-    for (let i = 0; i < stickySection.length; i++) {
-        let {
-            top
-        } = stickySection[i].parentElement.getBoundingClientRect();
-        let transTop = top > 0 ? 0 : top * -1;
-        if (transTop >= 1000) transTop >= 1000;
-
-        if (top <= 0 && i !== stickySection.length - 1) {
-            stickySection[i].style.filter = `blur(${0 + (transTop * .005)}px)`;
-            stickySection[i].style.transform = `scale3d(${1 - (transTop * .001)},${1-(transTop * 0.001)},1)`;
-            stickySection[i].style.opacity = 1 - (transTop * .0015)
-        }
-    }
-    requestAnimationFrame(animate)
-}
-
-animate()
-
-//Home Page txt anmation start
-anime.timeline({
-        loop: false
-    })
-    .add({
-        targets: '.ml15 .word',
-        scale: [14, 1],
-        opacity: [0, 1],
-        easing: "easeOutCirc",
-        duration: 800,
-        delay: (el, i) => 800 * i
-    });
-//Home Page txt anmation end
 //Home PAge Background Animation start
 var w = c.width = window.innerWidth,
     h = c.height = window.innerHeight,
