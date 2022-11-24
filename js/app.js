@@ -168,3 +168,8 @@ window.addEventListener('resize', function () {
     init();
 })
 //Home Page Background Animation End
+//Rules page cards
+VanillaTilt.init(document.querySelectorAll(".rule_card, .inner-section"), {
+    max: 25,
+    speed: 400
+});
