@@ -169,7 +169,7 @@ window.addEventListener('resize', function () {
 })
 //Home Page Background Animation End
 //Rules page cards
-VanillaTilt.init(document.querySelectorAll(".rule_card,.time_element,.rules_heading,.winner_heading"), {
+VanillaTilt.init(document.querySelectorAll(".rule_card,.time_element,.rules_heading,.winner_heading,.team_heading,.team_card"), {
     max: 25,
     speed: 400
 });

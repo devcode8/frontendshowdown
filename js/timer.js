@@ -1,4 +1,4 @@
-time="25 nov 2022 11:00:00";
+time="11 dec 2022 11:00:00";
 const countDate = new Date(time).getTime();
 var x = setInterval(function () {
     let now = new Date().getTime();
@@ -9,10 +9,10 @@ var x = setInterval(function () {
     var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var sec = Math.floor((distance % (1000 * 60)) / (1000));
 
-    document.getElementById("days").innerHTML= d + "d ";
-    document.getElementById("hours").innerHTML= hrs + "h  ";
+    document.getElementById("days").innerHTML= d + " d ";
+    document.getElementById("hours").innerHTML= hrs + " h  ";
     document.getElementById("minutes").innerHTML= min + "m ";
-    document.getElementById("seconds").innerHTML= sec + "s ";
+    document.getElementById("seconds").innerHTML= sec + " s ";
 
     if(distance<0){
         x= setInterval(0);
